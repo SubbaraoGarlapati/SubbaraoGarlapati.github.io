@@ -1,0 +1,135 @@
+* {
+    font-family: Didot;
+}
+
+/*@media print {
+
+}
+*/
+
+body {
+  width: 21.6cm;
+  height: 27.93cm;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+}
+
+
+.top {
+    grid-row-start: 1;
+    border: solid;
+    border-width: thin;
+    background-color: rgb(70,70,70);
+}
+
+
+.bottom {
+    border: solid;
+    border-width: thin;
+    border-color: black;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.left {
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: auto;
+}
+
+.left-header {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+    border-bottom: solid;
+    border-color: black;
+    font-size: 25px;
+    overflow: auto;
+}
+
+.activity-block {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    line-height: 15px;
+    font-size: 12px;
+}
+
+.activity-name {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.date {
+    float: right;
+    font-weight: normal;
+}
+
+.activity-list {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+
+
+
+.BR {
+    border: solid;
+    border-width: thin;
+    border-color: black;
+    background-color: rgb(220, 220, 220);
+}
+
+#name {
+    color: white;
+    text-align: center;
+    font-size:35px;
+}
+
+.right-header {
+    margin-bottom: 0;
+    font-weight: bold;
+    border-bottom: solid;
+    overflow: auto;
+}
+
+.right-header-class {
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;O
+}
+
+.contact-subsection {
+    line-height: 6px;
+    font-size: 12px;
+}
+
+.contact-headers {
+    margin-top: 13px;
+    font-weight: bold;
+}
+
+.skills-subsection {
+    line-height: 6px;
+    font-size: 12px;
+}
+
+.coursework-subsection {
+    line-height: 6px;
+    font-size: 12px;
+}
+
+.languages-subsection {
+    line-height: 6px;
+    font-size: 12px;
+}
+
+#indent {
+    text-indent: 10%;
+}
+
