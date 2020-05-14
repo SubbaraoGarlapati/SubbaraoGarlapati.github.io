@@ -1,25 +1,8 @@
-/*.navbar-nav {
-    margin-left: 1000px;
-}
-*/
-/*
-.navbar-nav {
-    float: left;
-    background-color: blue;
+* {
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
 }
 
-.navbar {
-    background-color: green;
-}
-
-.navbar-toggler {
-    background-color: yellow;
-}
-
-.collapse {
-    background-color: yellow;
-}
-*/
 .navbar {
     height: 15vh;
     margin: 0 !important;
@@ -27,6 +10,24 @@
 }
 
 .name{
-    font-family: Arial;
+    font-family: 'Varela Round', sans-serif;
     font-size: 30px;
+    color: teal !important;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.bottom-left {
+    grid-column-start: 1;
+    height: 85vh;
+}
+
+.headshot {
+    width: auto;
+    height: 85vh;
+    display: flex;
+    margin-right: auto;
 }
