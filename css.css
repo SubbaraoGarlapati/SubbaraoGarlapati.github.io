@@ -3,6 +3,14 @@
   -moz-border-radius: 0 !important;
 }
 
+@media screen and (max-width: 768px) {
+
+.bottom-left {display: none;}
+
+
+}
+
+
 .navbar {
     height: 15vh;
     margin: 0 !important;
@@ -11,9 +19,11 @@
 
 .name{
     font-family: 'Varela Round', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     color: teal !important;
 }
+
+
 
 .bottom-left {
     height: 85vh;
@@ -37,7 +47,7 @@
 .about-me-text {
     margin-left: 10vw;
     margin-right: 10vw;
-    line-height: 200%;
+    line-height: 250%;
     vertical-align: middle;
     font-style: italic;
     color: white !important;
