@@ -5,13 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="css.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+        function rem2px(rem) {
+           var el = document.createElement('div');
+        document.body.appendChild(el);
+        el.style.width = '1000rem';
+        var factor = el.clientWidth / 1000;
+        document.body.removeChild(el);
+        return rem * factor;
+        }
+    </script>
+    <script type="text/javascript">
+        function setWidth() {
+            var name = document.getElementById("nameID");
+            var headshot = document.getElementById("headshotID");
+            nameWidth = name.clientWidth;
+            headshotWidth = headshot.clientWidth;
+            calculation = rem2px(3) + nameWidth/2 - headshotWidth/2;
+            headshot.style.marginLeft = calculation + "px";
+        }
+    </script>
 </head>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-<body>
+<body class="bg-dark" onload="setWidth()">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a class="name ml-5">Subbarao Garlapati</a>
+        <a id="nameID" class="name ml-5">Subbarao Garlapati</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,7 +68,16 @@
 
     <div class="bottom">
         <div class="bottom-left">
-            <img class="headshot" src="Headshot.jpg" >
+            <img id="headshotID" class="headshot" src="Headshot.jpg" >
+        </div>
+        <div class="bottom-right">
+            <a class="about-me-text">Hi, my name is Subbarao Garlapati and I'm a second year computer science major at Georgia Tech.
+            I'm from Woodbury, MN. Some of my passioms include hanging out with friends, playing basketball, playing football, playing
+            call of duty, any kind of sports, watching Ted talks, trying to solve random riddles, and most importantly hanging out
+            with the family. Although I'm a CS major, my passions extend beyond computer science, particularly to biology, mathematics,
+            and physics. I'm excited to go out and change the world. I believe in the little things and personal connections being
+            the most important. Some of my values include striving for others' happiness, living in the moment, giving back to those
+            less fortunate, getting plenty of sleep</a>
         </div>
     </div>
 

@@ -1,3 +1,8 @@
+* {
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+}
+
 .navbar {
     height: 15vh;
     border: solid;
@@ -6,8 +11,9 @@
 }
 
 .name{
-    font-family: Arial;
+    font-family: 'Varela Round', sans-serif;
     font-size: 30px;
+    color: teal !important;
 }
 
 body {
