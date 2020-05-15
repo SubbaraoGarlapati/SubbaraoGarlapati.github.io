@@ -6,13 +6,16 @@
 @media screen and (max-width: 768px) {
 
 .bottom-left {display: none;}
-
-
+.mobile-only {display: block}
+.bottom-right {width: 85vw;}
+.bottom-right {margin-left: 15vw;}
+.about-me-text {margin-right: 0;}
+.about-me-text {margin-left: 0;}
 }
 
 
 .navbar {
-    height: 15vh;
+    height: 25vh;
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -22,8 +25,6 @@
     font-size: 40px;
     color: teal !important;
 }
-
-
 
 .bottom-left {
     height: 85vh;

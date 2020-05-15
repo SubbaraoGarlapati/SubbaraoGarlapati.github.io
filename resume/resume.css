@@ -3,6 +3,13 @@
   -moz-border-radius: 0 !important;
 }
 
+
+@media screen and (max-width: 768px) {
+
+#content {width: 85vw;}
+#content {margin-left: 15vw;}
+}
+
 .navbar {
     height: 15vh;
     border: solid;
