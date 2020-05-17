@@ -74,7 +74,6 @@ button:focus {
 .bottom-right {
     height: 85vh;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -82,7 +81,6 @@ button:focus {
     margin-left: 10vw;
     margin-right: 10vw;
     line-height: 250%;
-    vertical-align: middle;
     font-style: italic;
     color: white !important;
 }
@@ -94,12 +92,16 @@ button:focus {
 .mobileNav {display: flex !important;}
 .bottom-left {display: none;}
 .mobile-name {display: block}
-.about-me-text {margin-right: auto;}
+.about-me-text {
+    margin-right: auto;
+    margin-top: 5vh;
+}
 .about-me-text {margin-left: auto;}
 .bottom-right {
     height: 85vh;
     margin-left: 5vw;
     margin-right: 5vw;
+    align-items: flex-start;
 }
 .dropdown-toggle::after{display: none !important;}
 .dropdown {
