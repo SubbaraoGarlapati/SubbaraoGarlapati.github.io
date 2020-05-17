@@ -94,10 +94,13 @@ button:focus {
 .mobileNav {display: flex !important;}
 .bottom-left {display: none;}
 .mobile-name {display: block}
-.bottom-right {margin-left: 15vw;}
-.about-me-text {margin-right: 0;}
-.about-me-text {margin-left: 0;}
-.bottom-right {height: auto;}
+.about-me-text {margin-right: auto;}
+.about-me-text {margin-left: auto;}
+.bottom-right {
+    height: 85vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
 .dropdown-toggle::after{display: none !important;}
 .dropdown {
     position: absolute !important;
