@@ -68,25 +68,36 @@ for both navbars
     color: #adb5bd !important;
 }
 
+iframe {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  border: none;
+}
 
 /*
 mobile specific configuration
 */
 @media screen and (max-width: 1024px) {
 
-.navbar {display: none !important;}
-.mobileNav {display: flex !important;}
-.mobile-name {display: block}
-.bottom-right {
-    height: 85vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    align-items: flex-start;
-}
-.dropdown-toggle::after{display: none !important;}
-.dropdown {
-    position: absolute !important;
-    margin-right: auto;
-    margin-left: 5vw;
-}
+    .navbar {display: none !important;}
+    .mobileNav {display: flex !important;}
+    .mobile-name {display: block}
+    .bottom-right {
+        height: 85vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        align-items: flex-start;
+    }
+    .dropdown-toggle::after{display: none !important;}
+    .dropdown {
+        position: absolute !important;
+        margin-right: auto;
+        margin-left: 5vw;
+    }
+    iframe {
+        height: 100vh;
+        width: 100vw;
+    }
 }
