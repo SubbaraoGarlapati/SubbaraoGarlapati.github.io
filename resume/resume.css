@@ -1,103 +1,149 @@
 * {
-  border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
+    font-family: Times New Roman;
 }
+
+/*@media print {
+
+}
+*/
 
 body {
-    margin: 0;
-    background-color: #495057 !important;
-}
-
-/*
-desktop navbar
-*/
-.navbar {
-    height: 15vh;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.name{
-    font-family: 'Varela Round', sans-serif;
-    font-size: 40px;
-    color: teal !important;
-}
-
-/*
-mobile navbar
-*/
-.mobileNav {
-    display: none !important;
-    height: 15vh;
-    width: 100vw;
-    background-color: #343a40;
-    align-items: center;
-    text-align: center !important;
-}
-
-.mobileName {
-    font-family: 'Varela Round', sans-serif;
-    font-size: 25px;
-    color: teal !important;
-    vertical-align: middle;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-button {
-    background-color: #343a40 !important;
-}
-
-button:focus {
-    outline: 0 !important;
-}
-
-.dropdown-menu {
-    background-color: #212529 !important;
-    border: none;
-}
-
-.dropdown-item {
-    color: #adb5bd !important;
-}
-
-/*
-for both navbars
-*/
-.nav-link {
-    color: #adb5bd !important;
-}
-
-iframe {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 21.6cm;
+  height: 27.93cm;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  overflow: auto;
   padding: 0;
-  border: none;
+  margin: 0;
 }
 
-/*
-mobile specific configuration
-*/
-@media screen and (max-width: 1024px) {
 
-    .navbar {display: none !important;}
-    .mobileNav {display: flex !important;}
-    .mobile-name {display: block}
-    .bottom-right {
-        height: 85vh;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        align-items: flex-start;
-    }
-    .dropdown-toggle::after{display: none !important;}
-    .dropdown {
-        position: absolute !important;
-        margin-right: auto;
-        margin-left: 5vw;
-    }
-    iframe {
-        height: 100vh;
-        width: 100vw;
-    }
+.top {
+    grid-row-start: 1;
+/*    border: solid;
+    border-width: thin;*/
+    background-color: rgb(70,70,70);
 }
+
+
+.bottom {
+    border: solid;
+    border-width: thin;
+    border-color: black;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.left {
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: auto;
+}
+
+.left-header {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+    border-bottom: solid;
+    border-width: thin;
+    border-color: black;
+    font-size: 25px;
+    overflow: auto;
+}
+
+.activity-block {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    line-height: 15px;
+    font-size: 12px;
+}
+
+.activity-name {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.notbold {
+    font-weight: normal;
+}
+
+.date {
+    float: right;
+    font-weight: normal;
+}
+
+.role {
+    font-size: 14px;
+}
+
+.activity-list {
+    margin-top: 3px;
+    font-size: 15px;
+}
+
+
+
+
+.BR {
+/*    border: solid;
+    border-width: thin;
+    border-color: black;*/
+    background-color: rgb(220, 220, 220);
+}
+
+#name {
+    color: white;
+    text-align: center;
+    font-size:35px;
+}
+
+.right-header {
+    margin-bottom: 0;
+    font-weight: bold;
+    border-bottom: solid;
+    border-width: thin;
+    overflow: auto;
+}
+
+.right-header-class {
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+}
+
+.contact-subsection {
+    line-height: 6px;
+    font-size: 12px;
+}
+
+.contact-headers {
+    margin-top: 13px;
+    font-weight: bold;
+}
+
+.skills-subsection {
+    line-height: 6px;
+    font-size: 12px;
+}
+
+.certfications-subsection {
+    line-height: 6px;
+    font-size: 12px;
+}
+.coursework-subsection {
+    line-height: 6px;
+    font-size: 12px;
+}
+
+.languages-subsection {
+    line-height: 6px;
+    font-size: 12px;
+}
+
+#indent {
+    text-indent: 10%;
+}
+
