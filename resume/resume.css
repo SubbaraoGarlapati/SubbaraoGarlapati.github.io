@@ -1,149 +1,103 @@
 * {
-    font-family: Times New Roman;
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
 }
-
-/*@media print {
-
-}
-*/
 
 body {
-  width: 21.6cm;
-  height: 27.93cm;
-  display: grid;
-  grid-template-rows: 10% 90%;
-  overflow: auto;
-  padding: 0;
-  margin: 0;
+    margin: 0;
+    background-color: #495057 !important;
 }
 
-
-.top {
-    grid-row-start: 1;
-/*    border: solid;
-    border-width: thin;*/
-    background-color: rgb(70,70,70);
+/*
+desktop navbar
+*/
+.navbar {
+    height: 15vh;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-
-.bottom {
-    border: solid;
-    border-width: thin;
-    border-color: black;
-    grid-row-start: 2;
-    display: grid;
-    grid-template-columns: 75% 25%;
+.name{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 40px;
+    color: teal !important;
 }
 
-.left {
-    padding-left: 15px;
-    padding-right: 15px;
-    overflow: auto;
+/*
+mobile navbar
+*/
+.mobileNav {
+    display: none !important;
+    height: 15vh;
+    width: 100vw;
+    background-color: #343a40;
+    align-items: center;
+    text-align: center !important;
 }
 
-.left-header {
-    margin-top: 10px;
-    margin-bottom: 0;
-    font-weight: bold;
-    border-bottom: solid;
-    border-width: thin;
-    border-color: black;
+.mobileName {
+    font-family: 'Varela Round', sans-serif;
     font-size: 25px;
-    overflow: auto;
+    color: teal !important;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.activity-block {
-    margin-top: 5px;
-    margin-bottom: 0px;
-    line-height: 15px;
-    font-size: 12px;
+button {
+    background-color: #343a40 !important;
 }
 
-.activity-name {
-    margin-top: 0px;
-    margin-bottom: 2px;
-    font-size: 15px;
-    font-weight: bold;
+button:focus {
+    outline: 0 !important;
 }
 
-.notbold {
-    font-weight: normal;
+.dropdown-menu {
+    background-color: #212529 !important;
+    border: none;
 }
 
-.date {
-    float: right;
-    font-weight: normal;
+.dropdown-item {
+    color: #adb5bd !important;
 }
 
-.role {
-    font-size: 14px;
+/*
+for both navbars
+*/
+.nav-link {
+    color: #adb5bd !important;
 }
 
-.activity-list {
-    margin-top: 3px;
-    font-size: 15px;
+iframe {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  border: none;
 }
 
+/*
+mobile specific configuration
+*/
+@media screen and (max-width: 1024px) {
 
-
-
-.BR {
-/*    border: solid;
-    border-width: thin;
-    border-color: black;*/
-    background-color: rgb(220, 220, 220);
+    .navbar {display: none !important;}
+    .mobileNav {display: flex !important;}
+    .mobile-name {display: block}
+    .bottom-right {
+        height: 85vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        align-items: flex-start;
+    }
+    .dropdown-toggle::after{display: none !important;}
+    .dropdown {
+        position: absolute !important;
+        margin-right: auto;
+        margin-left: 5vw;
+    }
+    iframe {
+        height: 100vh;
+        width: 100vw;
+    }
 }
-
-#name {
-    color: white;
-    text-align: center;
-    font-size:35px;
-}
-
-.right-header {
-    margin-bottom: 0;
-    font-weight: bold;
-    border-bottom: solid;
-    border-width: thin;
-    overflow: auto;
-}
-
-.right-header-class {
-    padding-left: 10px;
-    padding-right: 10px;
-    overflow: auto;
-}
-
-.contact-subsection {
-    line-height: 6px;
-    font-size: 12px;
-}
-
-.contact-headers {
-    margin-top: 13px;
-    font-weight: bold;
-}
-
-.skills-subsection {
-    line-height: 6px;
-    font-size: 12px;
-}
-
-.certfications-subsection {
-    line-height: 6px;
-    font-size: 12px;
-}
-.coursework-subsection {
-    line-height: 6px;
-    font-size: 12px;
-}
-
-.languages-subsection {
-    line-height: 6px;
-    font-size: 12px;
-}
-
-#indent {
-    text-indent: 10%;
-}
-
